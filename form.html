@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Formulário de Usuário</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulário de Usuário</h2>
+
+        <form id="userForm" action="result.html" method="GET" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Local onde reside:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <div class="form-group">
+                <label>Sexo:</label>
+                <div class="gender-group">
+                    <div class="gender-option"> 
+                        <input type="radio" id="masculino" name="gender" value="Masculino" required>  
+                        <label for="masculino">Masculino</label>
+                    </div> 
+                    <div class="gender-option"> 
+                        <input type="radio" id="feminino" name="gender" value="Feminino" required> 
+                        <label for="feminino">Feminino</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <textarea id="hobbies" name="hobbies" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+   <script src="result.js"></script>
+ </body>
+</html>
